@@ -22,9 +22,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/work">Work</a></li>
-                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-                <li><a href="#">Service</a></li>
+                <li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="ion-ios-arrow-down"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="{{ site.baseurl }}/projects/corax">Corax</a></li>
+									</ul>
+                </li>
+                <li><a href="{{ site.baseurl }}/team">Team</a></li>
+                <!-- <li><a href="{{ site.baseurl }}/blog">News</a></li> -->
                 <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
