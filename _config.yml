@@ -16,7 +16,7 @@ keep_files:
 # Site settings
 title: Bioverse
 subtitle: "Bioverse landing page"
-url: "https://gilbocc.github.io" # the base hostname & protocol for your site
+url: "https://caterinagiuliani.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: "/corax_landing_page"
 cover: "/assets/cover.png"
