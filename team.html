@@ -11,9 +11,40 @@ permalink: /team/
       <div class="col-md-12">
         <div class="block">
           <h1>Team</h1>
-          <p>...</p>
+          <p>We combine our skill to solve the challenges of emergency setting.</p>
+          <p>We love our work and we are sure you will love it too!</p>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Team  -->
+
+<section id="portfolio-work">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <div class="portfolio-contant">
+              <ul id="portfolio-contant-active">
+                {% for ff in site.data.team %}
+                <li class="mix Branding">
+                    <a href="{{ ff.reference }}">
+                      <img src="{{ site.baseurl }}/img/team/{{ ff.image }}" alt="">
+                      <div class="overly">
+                        <div class="position-center">
+                          <h2>{{ ff.name }}</h2>
+                          <p>{{ ff.title }}</p>
+                        </div>
+                      </div>
+                    </a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </section>
