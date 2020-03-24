@@ -1,12 +1,12 @@
 - title: Affordable
-  icon: icon ion-coffee
+  icon: icon ion-cash
 - title: Transportable
-  icon: icon ion-coffee
+  icon: icon ion-model-s
 - title: Safe
-  icon: icon ion-coffee
+  icon: icon ion-medkit
 - title: User friendly
-  icon: icon ion-coffee
-- title: Reduce medication
-  icon: icon ion-coffee
+  icon: icon ion-ios-people-outline
+- title: Reduce costs
+  icon: icon ion-arrow-graph-down-right
 - title: Versatile
-  icon: icon ion-coffee
+  icon: icon ion-ios-refresh-outline

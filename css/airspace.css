@@ -52,9 +52,10 @@ a:active {
   margin-bottom: 70px;
 }
 .section-title h2 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 28px;
-  font-weight: 600;
+  color: #5C5C5C;
+  /* font-weight: 600; */
 }
 .section-title p {
   font-family: 'Volkhov', serif;
