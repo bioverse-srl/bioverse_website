@@ -29,24 +29,20 @@ permalink: /projects/corax/
         </div>
       </div>
       <div class="col-md-6">
-        {% if site.data.burns.size > 0 %}
-        <div class="block">
-          <ul class="counter-box clearfix" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
-            {% for ff in site.data.burns %}
-            <li>
-              <div class="block">
-                <i class="{{ ff.icon }}"></i>
-                <div>
-                  <h4 class="counter">{{ ff.counter }}</h4>
-                  <h4>{{ ff.unit }}</h4>
-                </div>
-                <span>{{ ff.text }}</span>
+        <div class="counter-box clearfix" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+          {% for ff in site.data.burns %}
+          <div id="item">
+            <div class="block">
+              <i class="{{ ff.icon }}"></i>
+              <div>
+                <h4 class="counter">{{ ff.counter }}</h4>
+                <h4>{{ ff.unit }}</h4>
               </div>
-            </li>
-            {% endfor %}
-          </ul>
+              <span>{{ ff.text }}</span>
+            </div>
+          </div>
+          {% endfor %}
         </div>
-        {% endif %}
       </div>
     </div>
   </div>

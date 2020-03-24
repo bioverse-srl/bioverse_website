@@ -873,21 +873,21 @@ footer .footer-manu ul li a:hover {
   color: #7B7B7B;
   font-size: x-large;
 }
-#corax_one .counter-box li {
+#corax_one .counter-box #item {
   width: 50%;
-  float: left;
+  /* float: left; */
   text-align: center;
   margin: 30px 0 30px;
 }
-#corax_one .counter-box li i {
+#corax_one .counter-box #item i {
   font-size: 35px;
 }
-#corax_one .counter-box li h4 {
+#corax_one .counter-box #item h4 {
   font-size: 30px;
   font-weight: bold;
   display:inline;
 }
-#corax_one .counter-box li span {
+#corax_one .counter-box #item span {
   color: #555;
 }
 
