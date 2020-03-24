@@ -1,0 +1,16 @@
+- counter: 11
+  unit: 'Millions'
+  icon: ion-ios-flame-outline
+  text: Serious Burns
+- counter: 95
+  unit: '%'
+  icon: ion-ios-flame-outline
+  text: In low-middle income countries
+- counter: 70
+  unit: '%'
+  icon: ion-ios-flame-outline
+  text: Children under 5 years old
+- counter: 20000
+  unit: ''
+  icon: ion-ios-flame-outline
+  text: Burn children every day

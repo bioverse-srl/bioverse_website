@@ -1,0 +1,9 @@
+- name: Transport
+  description: Journeys to reach the reference hospitals are too long and on unsuitable vehicles
+  image: auto.png
+- name: Infrastructure
+  description: The main causes of death are infections caused by the treatment of burns in unhealthy environments
+  image: sala.png
+- name: Dressings
+  description: Bandages and antibiotics are too expensive and often unavailable
+  image: bimbo.png

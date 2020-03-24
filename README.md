@@ -1,5 +1,6 @@
 # Bioverse Landing Page
 
+This website is built using the theme [Airspace-Jekyll](https://github.com/ndrewtl/airspace-jekyll).
 This Jekyll theme is a port of [ThemeFisher's](https://themefisher.com) [Airspace template](https://themefisher.com/products/airspace-free-bootstrap-website-template/). It is released under ThemeFisher's [license](https://themefisher.com/license) , which requires attribution. Concern about the licnese please contact with [them](mailto:themefisher@gmail.com)
 
 ## Steps for Setup:
@@ -47,5 +48,5 @@ This should install a local copy of jekyll.
 
 Now run the server:
 ```sh
-$ ./vendor/bundle/ruby/#{YOUR_RUBY_VERSION}/bin/jekyll server
+$ bundele exec ./vendor/bundle/ruby/#{YOUR_RUBY_VERSION}/bin/jekyll server
 ```

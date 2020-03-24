@@ -26,11 +26,11 @@ h6 {
   font-family: 'Roboto', sans-serif;
 }
 h2 {
-  font-size: 30px;
+  font-size: 30px !important;
   font-weight: 400;
 }
 h3 {
-  font-size: 28px;
+  font-size: 28px !important;
   font-weight: 300;
 }
 p {
@@ -93,6 +93,7 @@ font header .navbar-default .navbar-nav li a:hover {
 /*---------------------------------------------
 					Index Start
 -----------------------------------------------*/
+
 /*--
 	Slider Start
 --*/
@@ -805,4 +806,79 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+
+
+/*--
+	Corax One
+--*/
+#corax_one {
+  padding: 50px 50px;
+}
+#corax_one .block h2 {
+  line-height: 27px;
+  color: #5C5C5C;
+  padding-top: 110px;
+}
+#corax_one .block p {
+  padding-top: 50px;
+  color: #7B7B7B;
+  font-size: x-large;
+}
+#corax_one .counter-box li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin: 30px 0 30px;
+}
+#corax_one .counter-box li i {
+  font-size: 35px;
+}
+#corax_one .counter-box li h4 {
+  font-size: 30px;
+  font-weight: bold;
+  display:inline;
+}
+#corax_one .counter-box li span {
+  color: #555;
+}
+
+
+
+/*--
+	Corax Two
+--*/
+#corax_two {
+  overflow: hidden;
+  padding: 80px 0;
+}
+#corax_two .container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+  height: 50%;
+}
+
+/*--
+	Corax five
+--*/
+.feature-item i {
+  font-size: 60px;
+  color: #4A4656;
+}
+.feature-item h4 {
+  padding-top: 20px;
+  margin: 0;
+  color: #666;
+}
+.feature-item p {
+  color: #888;
+  padding-top: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
 }

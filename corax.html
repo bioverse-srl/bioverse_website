@@ -4,122 +4,114 @@ title: Contact us!
 permalink: /projects/corax/
 ---
 
-<!-- Slider Start -->
+<!-- Section 1  -->
 <section id="global-header">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
           <h1>Corax</h1>
-          <p>...</p>
+          <p>LifeBox for burn care</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Wrapper Start -->
+<!-- Section 2  -->
+<section id="corax_one">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="block text-center">
+          <h2>The Burn Crisis</h2>
+          <p>Every year</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        {% if site.data.burns.size > 0 %}
+        <div class="block">
+          {% for ff in site.data.burns %}
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="{{ ff.icon }}"></i>
+                <div>
+                  <h4 class="counter">{{ ff.counter }}</h4>
+                  <h4>{{ ff.unit }}</h4>
+                </div>
+                <span>{{ ff.text }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3  -->
+<div id="global-header">
+  <section id="corax_two">
+    <div class="container">
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+          {% for ff in site.data.problems %}
+          <div>
+            <div style="position: relative;">
+              <img src="{{ site.baseurl }}/img/corax/{{ ff.image }}" alt="">
+              <div class="content">
+                <div>
+                  <h2>{{ ff.name }}</h2>
+                  <p>{{ ff.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </div>
+  </section>
+</div>
+
+<!-- Section 4  -->
 <section id="intro">
   <div class="container">
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <div class="block">
           <div class="section-title">
-            <h2>About Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            <h2>Solution</h2>
+            <p>Corax life box - An armor to protect the defenseless</p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
+          <p>An innovative, flexible and lightweight tent that allows the treatment and safe transportation of patients with severe burns or low immune defenses. It creates an aseptic and controlled micro-environment, reproducing in a transportable and low-cost device the features of a room of Burn Intensive Care Unit (BICU). The flexible part is washable and there are no disposables, solving the problem of supplies and disposal. Our device controls the chemical and physical properties of the air, temperature, humidity preventing infections that are the main cause of death.</p>
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
-        <div class="block">
-          <img src="{{ site.baseurl }}/img/wrapper-img.png" alt="Img">
+        <div class="block" style="padding-top: 50px;">
+          <img src="{{ site.baseurl}}/img/corax/device.png" alt="device">
         </div>
       </div><!-- .col-md-5 close -->
     </div>
-  </div>
-</section>
-
-<section id="feature">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-6">
-        <h2>WE BELIEVE IN GREAT IDEAS</h2>
-        <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a href="#" class="btn btn-view-works">View Works</a>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 10px;">
+      {% for ff in site.data.features %}
+      <div class="feature-item" style="display: flex; flex: 0 0 33.333333%; flex-direction: column; align-items: center; justify-content: center;">
+        <i class="{{ ff.icon }}"></i>
+        <h4> {{ ff.title }}</h4>
+        <p> {{ ff.title }}</p>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- Service Start -->
-<section id="service">
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
-        <h2>Our Services</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="icon ion-coffee"></i>
-          <h4>Branding</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-compass"></i>
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-image"></i>
-          <h4>App Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-bug"></i>
-          <h4>Start Up</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-headphone"></i>
-          <h4>Logo Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-leaf"></i>
-          <h4>Development</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-planet"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-earth"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-    </div>
+<!-- Section 6  -->
+<div id="global-header">
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <video width="600" height="480" controls style="z-index: 100;">
+      <source src="{{ site.baseurl }}/img/corax/corax.mp4" type="video/mp4">
+    </video>
   </div>
-</section>
+</div>
+
