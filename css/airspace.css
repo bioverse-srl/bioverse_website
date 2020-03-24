@@ -152,7 +152,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 20px;
 }
 #intro .block img {
-  padding-left: 40px;
+  /* padding-left: 40px; */
   width: 100%;
 }
 #intro .section-title {
@@ -362,8 +362,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header {
   background: url("../img/slider-bg.png") no-repeat;
   background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 107px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   position: relative;
   background-attachment: fixed;
 }
@@ -808,6 +808,47 @@ footer .footer-manu ul li a:hover {
   color: #000;
 }
 
+/*--
+	Team
+--*/
+#team .container .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+  text-align: center;
+  font-family: 'FontAwesome';
+  color: #fff;
+}
+
+#team .container a:hover .content {
+  opacity: 1;
+}
+
+#team .container .content #text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#team .container .content #text h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#team .container .content #text p {
+  font-size: 15px;
+}
+
 
 /*--
 	Corax One
@@ -820,6 +861,13 @@ footer .footer-manu ul li a:hover {
   color: #5C5C5C;
   padding-top: 110px;
 }
+
+@media screen and (max-width: 992px) {
+  #corax_one .block h2 {
+    padding-top: 0px;
+  }
+}
+
 #corax_one .block p {
   padding-top: 50px;
   color: #7B7B7B;
@@ -842,8 +890,6 @@ footer .footer-manu ul li a:hover {
 #corax_one .counter-box li span {
   color: #555;
 }
-
-
 
 /*--
 	Corax Two
@@ -878,7 +924,8 @@ footer .footer-manu ul li a:hover {
 .feature-item p {
   color: #888;
   padding-top: 10px;
-  margin: 0;
+  margin-left: 30px;
+  margin-right: 30px;
   font-size: 14px;
   line-height: 1.8;
 }

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact us!
+title: Corax
 permalink: /projects/corax/
 ---
 
@@ -31,8 +31,8 @@ permalink: /projects/corax/
       <div class="col-md-6">
         {% if site.data.burns.size > 0 %}
         <div class="block">
-          {% for ff in site.data.burns %}
-          <ul class="counter-box clearfix">
+          <ul class="counter-box clearfix" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
+            {% for ff in site.data.burns %}
             <li>
               <div class="block">
                 <i class="{{ ff.icon }}"></i>
@@ -94,12 +94,12 @@ permalink: /projects/corax/
         </div>
       </div><!-- .col-md-5 close -->
     </div>
-    <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 10px;">
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 10px; justify-content: space-evenly;">
       {% for ff in site.data.features %}
-      <div class="feature-item" style="display: flex; flex: 0 0 33.333333%; flex-direction: column; align-items: center; justify-content: center;">
+      <div class="feature-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 150px">
         <i class="{{ ff.icon }}"></i>
-        <h4> {{ ff.title }}</h4>
-        <p> {{ ff.title }}</p>
+        <!-- <h4> {{ ff.title }}</h4> -->
+        <p style="text-align: center;"> {{ ff.title }}</p>
       </div>
       {% endfor %}
     </div>
@@ -109,7 +109,7 @@ permalink: /projects/corax/
 <!-- Section 6  -->
 <div id="global-header">
   <div style="display: flex; justify-content: center; align-items: center;">
-    <video width="600" height="480" controls style="z-index: 100;">
+    <video width="80%" height="auto" controls style="z-index: 100;">
       <source src="{{ site.baseurl }}/img/corax/corax.mp4" type="video/mp4">
     </video>
   </div>
