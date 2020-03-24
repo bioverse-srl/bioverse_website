@@ -4,14 +4,121 @@ title: Bioverse
 permalink: /
 ---
 
-<!-- Slider Start -->
-<section id="slider">
+<!-- Section 1 -->
+<section id="global-header">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-md-offset-2">
+      <div class="col-md-12">
         <div class="block">
-          <h1 class="animated fadeInUp">Bioverse</h1>
-          <p class="animated fadeInUp">Caterina non capisce dove vada questa scritta</p>
+          <h1 class="animated fadeInUp">BioVerse</h1>
+          <p class="animated fadeInUp">Care accessible anywhere</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2  -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>A revolutionary approach</h2>
+          </div>
+          <p>Bioverse develops new biomedical technologies for emergency and developing contexts. Our team of engineers believes that the development of new technologies that start from the real needs and from the analysis of the resource, can reduce the gap in health care between the countries of the world.</p>
+          <p>In the era of Sustainable Development Goals (SDGs), the health care discrepancy between countries is not acceptable. To satisfy the SDG3, Bioverse wants to fight the critical components of public health, in particular with objective 3.2 to prevent infant mortality.</p>
+          <p>Our first project is Corax</p>
+          <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/projects/corax" >Explore It</a>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block" style="padding-top: 50px;">
+          <img src="{{ site.baseurl}}/img/corax/device.png" alt="device">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
+
+<!-- Section 3  -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Milestones</h1>          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4  -->
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>What they say about us</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {% if site.data.references.size > 0 %}
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            {% for tm in site.data.references %}
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>{{ tm.testimonial }}</p>
+                <div class="user">
+                  <!-- <img src="{{ tm.image }}" alt="Pepole"> -->
+                  <p>{{ tm.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5  -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            {% for tm in site.data.articles %}
+            <div class="clients-logo-img">
+              <a href="{{ tm.link }}">
+                <!-- <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features"> -->
+                <p style="color: #fff;">{{ tm.source }}</p>
+              </a>
+            </div>
+            {% endfor %}
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2  -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div style="text-align: center;">
+          <div class="section-title">
+            <h2>Support Us</h2>
+          </div>
+          <p>You can help us on</p>
+          <a class="btn btn-default btn-call-to-action" href="https://www.gofundme.com/f/aiutaci-a-proteggere-i-bambini-ustionati">GoFundMe</a>
         </div>
       </div>
     </div>
