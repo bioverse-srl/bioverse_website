@@ -850,7 +850,7 @@ footer .footer-manu ul li a:hover {
 
 #team .container .content #text h2 {
   font-size: 22px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
 }
 #team .container .content #text p {
