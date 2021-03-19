@@ -1,0 +1,85 @@
+---
+layout: page
+title: Corax Errors
+permalink: /coraxerror/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Corax error converter</h1>
+          <p>Insert your error here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact form start -->
+<section id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <form>
+            <div class="form-group">
+              <input id="error" name="error" type="text" class="form-control" placeholder="Error">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <form>
+            <button class="btn btn-default" type="button" onclick="check()">Check</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="contact-box" class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="block">
+          <ul>
+            <li id="0" style="display:none;">Errore lettura sensore HIH_1</li>
+            <li id="1" style="display:none;">Errore lettura sensore HIH_2</li>
+            <li id="2" style="display:none;">Errore lettura sensore HIH_3</li>
+            <li id="3" style="display:none;">Errore lettura sensore Pressione</li>
+            <li id="4" style="display:none;">Errore lettura sensore CO2</li>
+            <li id="5" style="display:none;">Errore lettura sensore AQI</li>
+            <li id="6" style="display:none;">Errore accuratezza T0</li>
+            <li id="7" style="display:none;">Errore accuratezza T1</li>
+            <li id="8" style="display:none;">Errore accuratezza T2</li>
+            <li id="9" style="display:none;">Errore accuratezza H1</li>
+            <li id="10" style="display:none;">Errore accuratezza H2</li>
+            <li id="11" style="display:none;">Errore accuratezza H3</li>
+            <li id="12" style="display:none;">Allarme Temperatura media fuori range</li>
+            <li id="13" style="display:none;">Allarme Umidità media fuori dal range</li>
+            <li id="14" style="display:none;">Allarme Temperatura media maggiore Tmax</li>
+            <li id="15" style="display:none;">Allarme CO2 maggiore CO2max</li>
+            <li id="16" style="display:none;">Allarme AQI bassa</li>
+            <li id="17" style="display:none;">Allarme Ventola ferma</li>
+            <li id="18" style="display:none;">Allarme Batteria scarica</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+function hex2bin(hex){
+    return (parseInt(hex, 16).toString(2)).padStart(32, '0');
+}
+function check() {
+    error = hex2bin($("#error").val());
+    console.log(error)
+    for (i = 0; i < 19; i++) {
+    	if (error.charAt(error.length - 1 - i) == '0') $("#" + i.toString()).hide();
+        else $("#" + i.toString()).show();
+    }
+}
+</script>
