@@ -21,33 +21,6 @@ permalink: /contact/
 <!-- contact form start -->
 <section id="contact-form">
   <div class="container">
-    <!-- <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group">
-              <input id="mail-name" type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input id="mail-cc" type="text" class="form-control" placeholder="Cc Address">
-            </div>
-            <div class="form-group">
-              <input id="mail-subject" type="text" class="form-control" placeholder="Subject">
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group-2">
-              <textarea id="mail-content" class="form-control" rows="3" placeholder="Your Message"></textarea>
-            </div>
-            <button class="btn btn-default" type="submit" onclick="send_email()" >Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div> -->
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
@@ -57,7 +30,7 @@ permalink: /contact/
               <i class="fa fa-map-marker"></i>Via Giuseppe Mezzofanti 63, Bologna - Italia
             </li>
             <li>
-              <i class="fa fa-envelope-o"></i>Email: corax.lifebox@gmail.com
+              <i class="fa fa-envelope-o"></i>Email: bioverse.srl@gmail.com
             </li>
             <li>
               <i class="fa fa-phone"></i>Phone:+39 347026132
@@ -86,29 +59,18 @@ permalink: /contact/
   </div>
 </section>
 
-
-<script type="text/javascript">
-
-  function send_email() {
-
-    var subject = $("#mail-subject").val();
-    var content = $("#mail-content").val();
-    var name = $("#mail-name").val();
-    var cc = $("#mail-cc").val();
-
-    if ((subject == "") || (subject == "undefined")) return;
-    if ((content == "") || (content == "undefined")) return;
-    if ((name == "") || (name == "undefined")) return;
-
-    var link = "mailto:" + encodeURIComponent("corax.lifebox@gmail.com") + 
-        "?Subject=" + encodeURIComponent(subject) + 
-        "&Body=" + encodeURIComponent("I'm " + name + ",\n" + content);
-
-    if (cc.indexOf("@") != -1 && cc != "" && cc != "undefined") {
-      link = link + "&cc=" + encodeURIComponent(cc);
-    }
-
-    location.href = link;
-    
-  }
-  </script>
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div style="text-align: center;">
+          <div>
+            <h2 style="color: white;">Support Us</h2>
+          </div>
+          <p style="color: white;">You can help us on</p>
+          <a class="btn btn-default btn-call-to-action" href="https://www.gofundme.com/f/aiutaci-a-proteggere-i-bambini-ustionati">GoFundMe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

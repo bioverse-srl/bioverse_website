@@ -1,0 +1,12 @@
+- name: Università di Bologna
+  title: Bioverse is an accredited startup of the University of Bologna
+  image: UNIBO.png
+  reference: https://www.unibo.it
+- name: CUAMM
+  title: The first non-governmental organization focused on healthcare to be recognized by the Italian government
+  image: CUAMM.png
+  reference: https://www.mediciconlafrica.org/
+- name: Centro Grandi Ustionati Bufalini
+  title: High specialty intensive and sub-intensive care hospital
+  image: AUSL.png
+  reference: https://www.auslromagna.it/organizzazione/dipartimenti/chirurgico-grandi-traumi-cesena/centro-grandi-ustionati-dermatologia-cesena-forli/centro-grandi-ustionati-cesena

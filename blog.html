@@ -1,0 +1,40 @@
+---
+layout: page
+title: Blog
+permalink: /news/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>News</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div>
+  <section id="corax_two">
+    <div class="container">
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
+          {% for ff in site.data.news reversed %}
+          <div style="margin: 10px 0;">
+            <div style="position: relative;">
+              <img src="{{ site.url }}/img/news/{{ ff.image }}" alt="">
+              <div class="content">
+                <div>
+                  <h4>{{ ff.title }}</h4>
+                  <p>{{ ff.content }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </div>
+  </section>
+</div>

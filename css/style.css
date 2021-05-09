@@ -32,3 +32,43 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+.corax-header {
+  background: url("../img/corax/CORAX.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  position: relative;
+}
+.corax-header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #928dab, #1f1c2c 70%);
+  opacity: 0.8;
+}
+.corax-header .block {
+  color: #E3E3E4;
+  margin: 0 auto;
+  /* padding-left: 90px; */
+  text-align: center;
+}
+.corax-header .block h1 {
+  font-weight: 100;
+  font-size: 45px;
+  letter-spacing: 6px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+.corax-header .block p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}

@@ -5,7 +5,7 @@ permalink: /projects/corax/
 ---
 
 <!-- Section 1  -->
-<section id="global-header">
+<section class="corax-header" style="padding: 15% 0;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -56,7 +56,7 @@ permalink: /projects/corax/
           {% for ff in site.data.problems %}
           <div>
             <div style="position: relative;">
-              <img src="{{ site.baseurl }}/img/corax/{{ ff.image }}" alt="">
+              <img src="{{ site.url }}/img/corax/{{ ff.image }}" alt="">
               <div class="content">
                 <div>
                   <h2>{{ ff.name }}</h2>
@@ -86,7 +86,7 @@ permalink: /projects/corax/
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
         <div class="block" style="padding-top: 50px;">
-          <img src="{{ site.baseurl}}/img/corax/device.png" alt="device">
+          <img src="{{ site.url}}/img/corax/device.png" alt="device">
         </div>
       </div><!-- .col-md-5 close -->
     </div>
@@ -106,7 +106,7 @@ permalink: /projects/corax/
 <div id="global-header">
   <div style="display: flex; justify-content: center; align-items: center;">
     <video width="70%" height="auto" controls style="z-index: 100;" playsinline>
-      <source src="{{ site.baseurl }}/img/corax/corax.mp4" type="video/mp4">
+      <source src="{{ site.url }}/img/corax/corax.mp4" type="video/mp4">
     </video>
   </div>
 </div>
