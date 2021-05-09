@@ -16,7 +16,7 @@ keep_files:
 # Site settings
 title: Bioverse
 subtitle: "Bioverse landing page"
-url: "http://bioverse-srl.github.io" # the base hostname & protocol for your site
+url: "https://bioverse.it" # the base hostname & protocol for your site
 # url : "http://127.0.0.1:4000"
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: "/"
