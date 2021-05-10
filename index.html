@@ -50,9 +50,9 @@ permalink: /
         <div class="block">
           <h1>Milestones</h1>
           <!-- <img src="{{ site.url}}/img/milestone.png" alt="milestones" style="width: 100%;">       -->
-          <div class="owl-carousel owl-theme">
+          <div id="milestones" class="owl-carousel">
             {% for ff in site.data.news limit:4 %}
-            <div class="owl-item">
+            <div>
               <div style="position: relative;">
                 <img src="{{ site.url }}/img/news/{{ ff.image }}" alt="">
                 <div class="over-content">
