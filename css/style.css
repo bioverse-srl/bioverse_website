@@ -72,3 +72,27 @@
   letter-spacing: 1px;
   word-spacing: 3px;
 }
+
+.generic-header {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.generic-header .block {
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+}
+.generic-header .block h1 {
+  font-weight: 100;
+  font-size: 45px;
+  letter-spacing: 6px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+.generic-header .block p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
