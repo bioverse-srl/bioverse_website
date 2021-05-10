@@ -50,7 +50,7 @@ permalink: /
         <div class="block">
           <h1>Milestones</h1>
           <!-- <img src="{{ site.url}}/img/milestone.png" alt="milestones" style="width: 100%;">       -->
-          <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+          <div class="owl-carousel">
             {% for ff in site.data.news limit:4 %}
             <div>
               <div style="position: relative;">
@@ -58,7 +58,6 @@ permalink: /
                 <div class="over-content">
                   <div>
                     <h2>{{ ff.title }}</h2>
-                    <p>{{ ff.content }}</p>
                   </div>
                 </div>
               </div>
