@@ -107,3 +107,10 @@
   padding: 20px; /* Some padding */
   height: 50%;
 }
+
+.cool-font {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
