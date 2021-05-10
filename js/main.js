@@ -25,8 +25,8 @@ $(document).ready(function(){
 	});
 
 	$("#milestones").owlCarousel({
-		autoPlay: 3000,
-		items : 3,
+		autoPlay: 2000,
+		items : 4,
 		itemsDesktop : [1199,5],
 		itemsDesktopSmall : [979,5],
 	});
